@@ -1,0 +1,122 @@
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+.ba-square-box{
+  position: relative;
+  background: grey;
+  width: 80%;
+  max-width: 70vh;
+  margin: 20px auto;
+
+}
+.ba-square-content{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: 20px;
+}
+.ba-square-box:before{
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+.ba-square-content div {
+  position: absolute;
+}
+.row {
+  height: 12.5%;
+  background-color: #FFF;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.row:nth-child(1) {
+  top: 0;
+}
+.row:nth-child(2) {
+  top: 12.5%;
+}
+.row:nth-child(3) {
+  top:25%;
+}
+.row:nth-child(4) {
+  top: 37.5%;
+}
+.row:nth-child(5) {
+  top: 50%;
+}
+.row:nth-child(6) {
+  top: 62.5%;
+}
+.row:nth-child(7) {
+  top: 75%;
+}
+.row:nth-child(8) {
+  top: 87.5%;
+}
+.col {
+  height: 100%;
+  width: 12.5%;
+}
+.col:nth-child(1) {
+  left: 0;
+}
+.col:nth-child(2) {
+  left: 12.5%;
+}
+.col:nth-child(3) {
+  left: 25%;
+}
+.col:nth-child(4) {
+  left: 37.5%;
+}
+.col:nth-child(5) {
+  left: 50%;
+}
+.col:nth-child(6) {
+  left: 62.5%;
+}
+.col:nth-child(7) {
+  left: 75%;
+}
+.col:nth-child(8) {
+  left: 87.5%;
+}
+.row:nth-child(even) .col:nth-child(even),
+.row:nth-child(odd) .col:nth-child(odd) {
+  background-color: #bbb;
+}
+.row:nth-child(1) .col:nth-child(even):before,
+.row:nth-child(3) .col:nth-child(even):before,
+.row:nth-child(2) .col:nth-child(odd):before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #123456;
+}
+.row:nth-child(6) .col:nth-child(odd):before,
+.row:nth-child(8) .col:nth-child(odd):before,
+.row:nth-child(7) .col:nth-child(even):before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #654321;
+}
