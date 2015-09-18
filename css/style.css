@@ -20,75 +20,22 @@ button{
   right: 0;
   bottom: 0;
   top: 0;
-  margin: 20px;
+  margin: 3%;
 }
 .ba-square-box:before{
   content: '';
   display: block;
   padding-top: 100%;
 }
-.ba-square-content div {
-  position: absolute;
-}
 .row {
   height: 12.5%;
   background-color: #FFF;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.row:nth-child(1) {
-  top: 0;
-}
-.row:nth-child(2) {
-  top: 12.5%;
-}
-.row:nth-child(3) {
-  top:25%;
-}
-.row:nth-child(4) {
-  top: 37.5%;
-}
-.row:nth-child(5) {
-  top: 50%;
-}
-.row:nth-child(6) {
-  top: 62.5%;
-}
-.row:nth-child(7) {
-  top: 75%;
-}
-.row:nth-child(8) {
-  top: 87.5%;
 }
 .col {
+  position: relative;
   height: 100%;
   width: 12.5%;
-}
-.col:nth-child(1) {
-  left: 0;
-}
-.col:nth-child(2) {
-  left: 12.5%;
-}
-.col:nth-child(3) {
-  left: 25%;
-}
-.col:nth-child(4) {
-  left: 37.5%;
-}
-.col:nth-child(5) {
-  left: 50%;
-}
-.col:nth-child(6) {
-  left: 62.5%;
-}
-.col:nth-child(7) {
-  left: 75%;
-}
-.col:nth-child(8) {
-  left: 87.5%;
+  float: left;
 }
 .row:nth-child(even) .col:nth-child(even),
 .row:nth-child(odd) .col:nth-child(odd) {
@@ -119,4 +66,16 @@ button{
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background-color: #654321;
+}
+.row:nth-child(1) .col:nth-child(even):hover:before,
+.row:nth-child(3) .col:nth-child(even):hover:before,
+.row:nth-child(2) .col:nth-child(odd):hover:before {
+  top:0;
+  border: 2px solid red;
+}
+.row:nth-child(6) .col:nth-child(odd):hover:before,
+.row:nth-child(8) .col:nth-child(odd):hover:before,
+.row:nth-child(7) .col:nth-child(even):hover:before {
+  top:0;
+  border: 2px solid red;
 }
